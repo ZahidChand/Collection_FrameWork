@@ -1,0 +1,24 @@
+// Default sorting using Comparable with TreeMap
+import java.util.*;
+
+class Main
+{
+    public static void main(String args[])
+    {
+        Hashtable<Integer,String> t=new Hashtable<>();
+
+        t.put(101,"zahid");
+        t.put(104,"Amir");
+        t.put(102,"Walter");
+        t.put(105,"Jessy");
+
+        Set<Integer> k = t.keySet();
+
+        Iterator<Integer> it = k.iterator();
+        while(it.hasNext())
+        {
+            Integer p = it.next();
+            System.out.println(t.get(p));
+        }
+    }
+}
